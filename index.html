@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Arcade Games</title>
+	
+	<style>
+
+	  * {
+		font-family: sans-serif;
+	  }
+
+	  body{
+		background-color: #000;
+		color: #f2f2f2;
+	  }
+
+	  #games-link-list {
+		display: block;
+		margin-top: 24%;
+		text-align: center;
+	  }
+
+	  button {
+		cursor: pointer;
+		padding: 10px;
+		width: 180px;
+		height: 50px;
+		outline: none;
+		color: #eee;
+		font-weight: bold;
+		font-size: 120%;
+		border: 1px solid #f2f2f2;
+		border-radius: 8px;
+		margin: 0 .5rem;
+		transition: .5s;
+	  }
+
+	  #snake {
+		background-image: url('./assets/snake.svg');
+		background-size: 100%;
+		opacity: 1;
+	  }
+	  #snake:hover {
+		background-size: 195%;
+	  }
+	  #snake:hover span {
+		opacity: 0;
+	  }
+	  #snake span {
+		text-shadow: 1px 3px 8px grey;
+	  }
+
+	  #tetris {
+		background-color: darkred;
+	  }
+	</style>
+
+</head>
+<body>
+  <div id="games-link-list">
+	<button id="snake" type="button" onclick="document.location.href = '/snake'">
+	  <span>Snake</span>
+	</button>
+	<button id="tetris" type="button" onclick="document.location.href = '/tetris'">Tetris</button>
+  </div>
+</body>
+</html>
